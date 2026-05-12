@@ -9,7 +9,7 @@ char    *il_strncpy(char *dst, const char *src, size_t n)
         dst[i] = src[i];
         i++;
     }
-    /* pad remaining bytes with '\0' as strncpy specifies */
+    /* C spec: pad remaining bytes with '\0' even past the end of src */
     while (i < n)
         dst[i++] = '\0';
     return (dst);

@@ -7,7 +7,7 @@ char    *il_strchr(const char *s, int c)
             return ((char *)s);
         s++;
     }
-    /* check the null terminator itself — strchr('\0') must succeed */
+    /* check the null terminator itself: strchr(s, '\0') must return a pointer to it */
     if ((char)c == '\0')
         return ((char *)s);
     return (NULL);

@@ -16,5 +16,6 @@ int     il_atoi(const char *str)
     result = 0;
     while (il_isdigit((unsigned char)*str))
         result = result * 10 + (*str++ - '0');
+    /* stops at the first non-digit: no error on trailing garbage */
     return (sign * result);
 }

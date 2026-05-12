@@ -7,7 +7,7 @@ char    *il_strrchr(const char *s, int c)
     last = NULL;
     while (*s) {
         if (*s == (char)c)
-            last = s;
+            last = s;   /* last tracks the most recent match; loop continues to find further ones */
         s++;
     }
     /* check the null terminator itself */

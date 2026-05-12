@@ -11,6 +11,6 @@ void    *il_calloc(size_t count, size_t size)
     p = malloc(count * size);
     if (!p)
         return (NULL);
-    il_bzero(p, count * size);
+    il_bzero(p, count * size);  /* il_bzero zeroes count*size bytes: calloc guarantees zero-initialisation */
     return (p);
 }

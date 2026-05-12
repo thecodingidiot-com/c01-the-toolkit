@@ -24,5 +24,6 @@ t_list  *il_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
         il_lstadd_back(&result, node);
         lst = lst->next;
     }
+    /* original list is not freed or modified: caller owns both lists */
     return (result);
 }
