@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-int     il_islower(int c)
+int     tci_islower(int c)
 {
     /* 'a'–'z' in ASCII are contiguous: 97–122 */
     return (c >= 'a' && c <= 'z');

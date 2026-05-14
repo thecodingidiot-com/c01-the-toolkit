@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-char    *il_strncpy(char *dst, const char *src, size_t n)
+char    *tci_strncpy(char *dst, const char *src, size_t n)
 {
     size_t  i;
 

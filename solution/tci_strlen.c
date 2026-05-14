@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-size_t  il_strlen(const char *s)
+size_t  tci_strlen(const char *s)
 {
     size_t  len;
 

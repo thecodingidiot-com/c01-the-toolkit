@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-char    *il_strchr(const char *s, int c)
+char    *tci_strchr(const char *s, int c)
 {
     while (*s) {
         if (*s == (char)c)

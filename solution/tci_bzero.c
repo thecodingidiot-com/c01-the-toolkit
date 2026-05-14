@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-void    il_bzero(void *s, size_t n)
+void    tci_bzero(void *s, size_t n)
 {
     unsigned char   *p;
 

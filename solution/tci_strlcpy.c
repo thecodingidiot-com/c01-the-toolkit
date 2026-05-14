@@ -1,11 +1,11 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-size_t  il_strlcpy(char *dst, const char *src, size_t size)
+size_t  tci_strlcpy(char *dst, const char *src, size_t size)
 {
     size_t  src_len;
     size_t  i;
 
-    src_len = il_strlen(src);
+    src_len = tci_strlen(src);
     if (size == 0)
         return (src_len);
     /* copy at most size-1 bytes, then null-terminate */

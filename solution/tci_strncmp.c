@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-int     il_strncmp(const char *s1, const char *s2, size_t n)
+int     tci_strncmp(const char *s1, const char *s2, size_t n)
 {
     /* n=0: strings compare equal by definition (no bytes examined) */
     if (n == 0)

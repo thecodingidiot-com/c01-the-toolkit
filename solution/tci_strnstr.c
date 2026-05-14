@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-char    *il_strnstr(const char *haystack, const char *needle, size_t len)
+char    *tci_strnstr(const char *haystack, const char *needle, size_t len)
 {
     size_t  nlen;
     size_t  i;
@@ -8,7 +8,7 @@ char    *il_strnstr(const char *haystack, const char *needle, size_t len)
 
     if (!*needle)
         return ((char *)haystack);
-    nlen = il_strlen(needle);
+    nlen = tci_strlen(needle);
     i = 0;
     while (i < len && haystack[i]) {
         /* needle must fit entirely within the remaining len bytes */

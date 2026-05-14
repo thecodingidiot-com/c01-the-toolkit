@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-int     il_strcmp(const char *s1, const char *s2)
+int     tci_strcmp(const char *s1, const char *s2)
 {
     while (*s1 && *s1 == *s2) {
         s1++;

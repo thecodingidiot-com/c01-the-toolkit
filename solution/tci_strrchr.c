@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-char    *il_strrchr(const char *s, int c)
+char    *tci_strrchr(const char *s, int c)
 {
     const char  *last;
 

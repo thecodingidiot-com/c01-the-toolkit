@@ -1,12 +1,12 @@
-#include "idiotlib.h"
+#include "libtci.h"
 #include <stdlib.h>
 
-char    *il_strndup(const char *s, size_t n)
+char    *tci_strndup(const char *s, size_t n)
 {
     char    *copy;
     size_t  i;
 
-    copy = il_calloc(n + 1, 1);      /* +1 for null terminator */
+    copy = tci_calloc(n + 1, 1);      /* +1 for null terminator */
     if (!copy)
         return (NULL);
     i = 0;

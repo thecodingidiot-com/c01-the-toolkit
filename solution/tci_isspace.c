@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-int     il_isspace(int c)
+int     tci_isspace(int c)
 {
     /* the six C whitespace bytes: space, tab, newline, vertical-tab, form-feed, carriage-return */
     return (c == ' ' || c == '\t' || c == '\n'

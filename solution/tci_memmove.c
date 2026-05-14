@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-void    *il_memmove(void *dst, const void *src, size_t n)
+void    *tci_memmove(void *dst, const void *src, size_t n)
 {
     unsigned char       *d;
     const unsigned char *s;

@@ -1,6 +1,6 @@
-#include "idiotlib.h"
+#include "libtci.h"
 
-void    *il_memset(void *s, int c, size_t n)
+void    *tci_memset(void *s, int c, size_t n)
 {
     unsigned char   *p;
 
