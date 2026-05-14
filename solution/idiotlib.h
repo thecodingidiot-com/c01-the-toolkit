@@ -39,20 +39,4 @@ char    *il_strndup(const char *s, size_t n);
 char    *il_strnstr(const char *haystack, const char *needle, size_t len);
 int      il_atoi(const char *str);
 
-/* lists */
-typedef struct s_list {
-    void            *content;
-    struct s_list   *next;
-}   t_list;
-
-t_list  *il_lstnew(void *content);
-void     il_lstadd_front(t_list **lst, t_list *new);
-void     il_lstadd_back(t_list **lst, t_list *new);
-int      il_lstsize(t_list *lst);
-t_list  *il_lstlast(t_list *lst);
-void     il_lstdelone(t_list *lst, void (*del)(void *));
-void     il_lstclear(t_list **lst, void (*del)(void *));
-void     il_lstiter(t_list *lst, void (*f)(void *));
-t_list  *il_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-
 #endif
