@@ -35,6 +35,7 @@ int      il_strncmp(const char *s1, const char *s2, size_t n);
 char    *il_strchr(const char *s, int c);
 char    *il_strrchr(const char *s, int c);
 char    *il_strdup(const char *s);
+char    *il_strndup(const char *s, size_t n);
 char    *il_strnstr(const char *haystack, const char *needle, size_t len);
 int      il_atoi(const char *str);
 
