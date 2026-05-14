@@ -725,7 +725,7 @@ static void test_strnstr(void)
 
 static void test_atoi(void)
 {
-    check("atoi: positive integer",  tci_atoi("42") == atoi("42"));
+    check("atoi: positive integer",  tci_atoi("100") == atoi("100"));
     check("atoi: negative integer",  tci_atoi("-17") == atoi("-17"));
     check("atoi: zero",              tci_atoi("0") == 0);
     check("atoi: leading spaces",    tci_atoi("   7") == atoi("   7"));

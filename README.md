@@ -41,12 +41,9 @@ Character: `tci_isascii`, `tci_isalpha`, `tci_isdigit`, `tci_isalnum`,
 
 Strings: `tci_strlen`, `tci_strcpy`, `tci_strncpy`, `tci_strlcpy`, `tci_strlcat`,
 `tci_strcmp`, `tci_strncmp`, `tci_strchr`, `tci_strrchr`, `tci_strdup`,
-`tci_strnstr`, `tci_atoi`
+`tci_strndup`, `tci_strnstr`, `tci_atoi`
 
-Lists: `tci_lstnew`, `tci_lstadd_front`, `tci_lstadd_back`, `tci_lstsize`,
-`tci_lstlast`, `tci_lstdelone`, `tci_lstclear`, `tci_lstiter`, `tci_lstmap`
-
-**Header:** `libtci.h` — declares all 37 functions and the `t_list` type.
+**Header:** `libtci.h` — declares all 29 functions.
 
 **Build target:** `make re` must produce `libtci.a`.
 
@@ -63,7 +60,6 @@ are done, not before.
    - Memory and character functions are compared against their libc counterparts.
    - `strlcpy`, `strlcat`, and `strnstr` are tested against embedded reference
      implementations (glibc does not include them).
-   - List functions are tested against their specification.
 4. **valgrind** — runs the test runner under valgrind; no leaks or errors.
 5. **sanitisers** — recompiles `tci_*.c` with `-fsanitize=address,undefined`
    and runs the result; no sanitiser errors.
